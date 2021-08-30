@@ -53,11 +53,12 @@
     <UnityVersion>2020.3.16f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Challenge 1\Scripts\PropellerRotator.cs" />
     <Compile Include="Assets\Challenge 1\Scripts\PlayerControllerX.cs" />
     <Compile Include="Assets\Challenge 1\Scripts\FollowPlayerX.cs" />
-    <Compile Include="Assets\Challenge 1\Scripts\PropellerRotator.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\VehicleNPC.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Course Library\_Source_Files\_LICENSE.txt" />

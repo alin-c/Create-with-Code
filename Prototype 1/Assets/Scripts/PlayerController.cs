@@ -13,9 +13,18 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Update() {
-		horizontalInput = Input.GetAxis("Horizontal");
-		forwardInput = Input.GetAxis("Vertical");
+		if (gameObject.CompareTag("Player1")) {
+			horizontalInput = Input.GetAxis("Horizontal1");
+			forwardInput = Input.GetAxis("Vertical1");
+		} else if (gameObject.CompareTag("Player2")) {
+			horizontalInput = Input.GetAxis("Horizontal2");
+			forwardInput = Input.GetAxis("Vertical2");
+		}
 
+		PlayerMove(forwardInput, horizontalInput);
+	}
+
+	void PlayerMove(float forwardInput, float horizontalInput) {
 		transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
 		transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 	}
